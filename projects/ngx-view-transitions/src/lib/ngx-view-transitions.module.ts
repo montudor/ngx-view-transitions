@@ -1,16 +1,9 @@
-import { NgModule } from '@angular/core';
-import { NgxViewTransitionsComponent } from './ngx-view-transitions.component';
-
-
+import { NgModule } from '@angular/core'
+import { NgxViewTransitionsComponent } from './ngx-view-transitions.component'
 
 @NgModule({
-  declarations: [
-    NgxViewTransitionsComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    NgxViewTransitionsComponent
-  ]
+  declarations: [NgxViewTransitionsComponent],
+  imports: [],
+  exports: [NgxViewTransitionsComponent],
 })
-export class NgxViewTransitionsModule { }
+export class NgxViewTransitionsModule {}
