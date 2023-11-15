@@ -4,11 +4,11 @@ import { filter, timer } from 'rxjs'
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 
 @Directive({
-  selector: '[libTransitionStart]',
+  selector: '[ngxViewTransitionStart]',
   standalone: true,
 })
 export class TransitionStartDirective implements OnInit {
-  @Input('libTransitionStart') transitionStartValue!: string
+  @Input('ngxViewTransitionStart') transitionStartValue!: string
   @Input() transitionTrigger: 'always' | 'click' | 'parentClick' = 'always'
   @HostBinding('style.view-transition-name') viewTransitionName?: string
 

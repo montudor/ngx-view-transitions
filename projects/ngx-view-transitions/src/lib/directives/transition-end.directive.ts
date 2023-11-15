@@ -3,11 +3,11 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router'
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop'
 
 @Directive({
-  selector: '[libTransitionEnd]',
+  selector: '[ngxViewTransitionEnd]',
   standalone: true,
 })
 export class TransitionEndDirective implements OnInit {
-  @Input('libTransitionEnd') transitionEndValue!: string
+  @Input('ngxViewTransitionEnd') transitionEndValue!: string
   @HostBinding('style.view-transition-name') viewTransitionName?: string
 
   constructor(

@@ -2,7 +2,7 @@ import { ContentChildren, Directive, HostListener, QueryList } from '@angular/co
 import { TransitionStartDirective } from './transition-start.directive'
 
 @Directive({
-  selector: '[libTransitionParent]',
+  selector: '[ngxViewTransitionParent]',
   standalone: true,
 })
 export class TransitionParentDirective {
